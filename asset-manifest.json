@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/lovekeshberwal/e-commercewithreact/static/css/main.feb84ba6.css",
-    "main.js": "/lovekeshberwal/e-commercewithreact/static/js/main.8354088f.js",
-    "index.html": "/lovekeshberwal/e-commercewithreact/index.html",
-    "main.feb84ba6.css.map": "/lovekeshberwal/e-commercewithreact/static/css/main.feb84ba6.css.map",
-    "main.8354088f.js.map": "/lovekeshberwal/e-commercewithreact/static/js/main.8354088f.js.map"
+    "main.css": "/e-commercewithreact/static/css/main.feb84ba6.css",
+    "main.js": "/e-commercewithreact/static/js/main.8354088f.js",
+    "index.html": "/e-commercewithreact/index.html",
+    "main.feb84ba6.css.map": "/e-commercewithreact/static/css/main.feb84ba6.css.map",
+    "main.8354088f.js.map": "/e-commercewithreact/static/js/main.8354088f.js.map"
   },
   "entrypoints": [
     "static/css/main.feb84ba6.css",
