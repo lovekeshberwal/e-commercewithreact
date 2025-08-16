@@ -1,0 +1,84 @@
+.home {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  
+  .hero-section {
+    background: linear-gradient(135deg, var(--primary-color), #6a5acd);
+    color: white;
+    padding: 3rem 1rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(30deg);
+    z-index: 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .product-image-container {
+    height: 200px;  /* Fixed height for all product images */
+    overflow: hidden; /* Ensures images don't overflow container */
+  }
+  
+  .product-image {
+    width: 100%;    /* Full width of container */
+    height: 100%;   /* Full height of container */
+    object-fit: cover; /* Maintains aspect ratio while filling space */
+    transition: transform 0.5s ease; /* Smooth zoom animation */
+  }
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-section p {
+      font-size: 1rem;
+    }
+    
+    .products-container {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .products-container {
+      grid-template-columns: 1fr;
+    }
+  }
